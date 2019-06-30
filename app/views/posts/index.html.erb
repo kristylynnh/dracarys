@@ -1,4 +1,8 @@
-<h1>Dracarys!</h1> 
+<% @posts.each do |post| %>
+  <div>
+    <h1><%= post.dragon %></h1><br />
+    <i><%= post.owner %></i><br />
+  </div>
 
-
-<p> This is where I plan on building stuff... but not with fire and blood.</p> 
+  <hr />
+<% end %>
